@@ -1,0 +1,23 @@
+$maxWidth: 970px; 
+$textColor: #353535;
+$themeColor: rgba(79, 189, 181,.7);
+$themeGrey: #9B9B9B;
+$custom-border: 1px solid #ECECEC;
+
+$button-default-hover: lighten($themeColor, 5%);
+$button-grey: $themeGrey;
+$button-color-disable: #DEE1E2;
+$buttonTextColor: black;
+
+$hr-color-dark: #4A4A4A;
+$hr-color-light: #DEE1E2;
+
+
+// font size *************************************************
+$font-xxl: em(42);
+$font-xl: em(30);
+$font-lg: em(24);
+$font-med: em(18);
+$font-sm: em(16);
+$font-xs: em(14);
+$font-xxs: em(12);

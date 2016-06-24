@@ -1,0 +1,141 @@
+// font *************************************************
+@mixin font-hind-light {
+	font-family: 'Hind', sans-serif;
+	font-weight: 300;
+}
+
+@mixin font-hind-medium {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+}
+
+@mixin font-open-sans {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+@mixin font-open-sans-semibold {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+// font hind light with size *************************************************
+
+@mixin font-xxl-hind-light {
+  @include font-hind-light;
+  font-size: $font-xxl; //42
+}
+@mixin font-xl-hind-light {
+  @include font-hind-light;
+  font-size: $font-xl; //30
+}
+@mixin font-lg-hind-light {
+  @include font-hind-light;
+  font-size: $font-lg; //24
+}
+@mixin font-med-hind-light {
+  @include font-hind-light;
+  font-size: $font-med; //18
+}
+@mixin font-sm-hind-light {
+  @include font-hind-light;
+  font-size: $font-sm; //16
+}
+@mixin font-xs-hind-light {
+  @include font-hind-light;
+  font-size: $font-xs; //14
+}
+@mixin font-xxs-hind-light {
+  @include font-hind-light;
+  font-size: $font-xxs; //12
+}
+
+// font hind medium with size *************************************************
+@mixin font-xxl-hind-medium {
+  @include font-hind-medium;
+  font-size: $font-xxl;
+}
+@mixin font-xl-hind-medium {
+  @include font-hind-medium;
+  font-size: $font-xl;
+}
+@mixin font-lg-hind-medium {
+  @include font-hind-medium;
+  font-size: $font-lg;
+}
+@mixin font-med-hind-medium {
+  @include font-hind-medium;
+  font-size: $font-med;
+}
+@mixin font-sm-hind-medium {
+  @include font-hind-medium;
+  font-size: $font-sm;
+}
+@mixin font-xs-hind-medium {
+  @include font-hind-medium;
+  font-size: $font-xs;
+}
+@mixin font-xxs-hind-medium {
+  @include font-hind-medium;
+  font-size: $font-xxs;
+}
+
+// font open sans with size *************************************************
+@mixin font-xxl-open-sans {
+  @include font-open-sans;
+  font-size: $font-xxl;
+}
+@mixin font-xl-open-sans {
+  @include font-open-sans;
+  font-size: $font-xl;
+}
+@mixin font-lg-open-sans {
+  @include font-open-sans;
+  font-size: $font-lg;
+}
+@mixin font-med-open-sans {
+  @include font-open-sans;
+  font-size: $font-med;
+}
+@mixin font-sm-open-sans {
+  @include font-open-sans;
+  font-size: $font-sm;
+}
+@mixin font-xs-open-sans {
+  @include font-open-sans;
+  font-size: $font-xs;
+}
+@mixin font-xxs-open-sans {
+  @include font-open-sans;
+  font-size: $font-xxs;
+}
+
+// font open sans semibold with size *************************************************
+@mixin font-xxl-open-sans-semibold {
+  @include font-open-sans-semibold;
+  font-size: $font-xxl;
+}
+@mixin font-xl-open-sans-semibold {
+  @include font-open-sans-semibold;
+  font-size: $font-xl;
+}
+@mixin font-lg-open-sans-semibold {
+  @include font-open-sans-semibold;
+  font-size: $font-lg;
+}
+@mixin font-med-open-sans-semibold {
+  @include font-open-sans-semibold;
+  font-size: $font-med;
+}
+@mixin font-sm-open-sans-semibold {
+  @include font-open-sans-semibold;
+  font-size: $font-sm;
+}
+@mixin font-xs-open-sans-semibold {
+  @include font-open-sans-semibold;
+  font-size: $font-xs;
+}
+@mixin font-xxs-open-sans-semibold {
+  @include font-open-sans-semibold;
+  font-size: $font-xxs;
+}

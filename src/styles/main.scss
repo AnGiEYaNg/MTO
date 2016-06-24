@@ -1,0 +1,21 @@
+@import 'functions/normalize';
+* {
+  box-sizing: border-box;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@import "functions/em-calculator";
+@import "Fonts";
+@import "variables";
+@import "mixin-font";
+@import "mixins";
+@import "global";
+
+@import "home";

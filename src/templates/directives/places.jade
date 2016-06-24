@@ -1,0 +1,4 @@
+.Places
+	.Place(ng-repeat="place in placeList track by $index", layout="row")
+		.Place__name(ui-sref="food({placeName: place.name})") {{place.name}}
+		img(src="/IMAGES/{{place.imgUrl}}", align="middle")

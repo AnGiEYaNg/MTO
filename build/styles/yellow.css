@@ -1,0 +1,1896 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0;
+  color: gray;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* devanagari */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Hind-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Hind-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Hind-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Hind-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Hind-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/OpenSans-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+html, body {
+  background-color: #F3F3F3;
+  height: 100%;
+}
+
+.page-content {
+  margin-bottom: 100px;
+}
+
+.page-content:after {
+  content: "";
+  display: block;
+  height: 100px;
+}
+
+md-input-container {
+  padding-bottom: 0px;
+  margin: 15px 10px 15px 0;
+}
+
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused, md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+  border-color: #EDD400;
+}
+
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused label, md-input-container:not(.md-input-invalid).md-input-focused label {
+  color: #9B9B9B;
+}
+
+md-radio-button.md-default-theme, md-radio-button .md-on {
+  background-color: #EDD400;
+}
+
+md-radio-button.md-default-theme.md-checked, md-radio-button.md-checked .md-off {
+  border-color: #EDD400;
+}
+
+.smarty-ui {
+  z-index: 2;
+}
+
+h1 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 2.14286em;
+}
+
+h3 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 1.71429em;
+}
+
+h4 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 1.14286em;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.71429em;
+}
+
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.85714em;
+}
+
+.hr-dark {
+  border-top: 1px solid #4A4A4A;
+}
+
+.hr-light {
+  border-top: 1px solid #DEE1E2;
+}
+
+button {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+}
+
+button:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn-grey {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+  background-color: inherit;
+  color: #9B9B9B;
+  border: 1px solid #9B9B9B;
+}
+
+.btn-grey:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+.btn-grey:focus {
+  outline: none;
+}
+
+.btn-grey:hover {
+  color: black;
+}
+
+.btn-inverted {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-inverted:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+.btn-inverted:focus {
+  outline: none;
+}
+
+.btn-inverted:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+
+.btn-disabled {
+  background-color: inherit;
+  border: 1px solid #DEE1E2;
+  color: #DEE1E2;
+  cursor: default;
+}
+
+.btn-disabled:hover {
+  background-color: inherit;
+  border: 1px solid #DEE1E2;
+}
+
+.btn-arrow {
+  margin-left: 3.57143em;
+}
+
+.success {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  height: 55px;
+  padding: 18px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  background-color: #6FC872;
+}
+
+.success div {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.error {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  height: 55px;
+  padding: 18px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  background-color: rgba(242, 61, 61, 0.66);
+}
+
+.error div {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.caution {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  height: 55px;
+  padding: 18px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  background-color: #EDD400;
+}
+
+.caution div {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.support {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  height: 55px;
+  padding: 18px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  background-color: #57B2FB;
+}
+
+.support div {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+table tr:nth-child(odd+1) {
+  background-color: #ECECEC;
+}
+
+table tr:hover:not(:first-child) {
+  background-color: #c6c6c6;
+  border-left: 2px solid #EDD400;
+}
+
+table th {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 1.14286em;
+  color: #7F8C8D;
+  border-bottom: 1px solid #DEE1E2;
+  padding: 1.42857em 1.07143em;
+}
+
+table td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.14286em;
+  padding: 1.42857em 1.07143em;
+}
+
+table td a {
+  color: black;
+  text-decoration: underline;
+}
+
+.scheduled {
+  color: #2196F3;
+}
+
+.pending {
+  color: #2196F3;
+}
+
+.inprogress {
+  color: #F5A623;
+}
+
+.completed {
+  color: #21A670;
+}
+
+.canceled {
+  color: #9B9B9B;
+}
+
+.failed {
+  color: #F44336;
+}
+
+.icons {
+  background-color: #EDD400;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.pad {
+  background-color: #EDD400;
+}
+
+.auth .card-a {
+  background-color: #EDD400;
+  color: white;
+}
+
+.auth {
+  width: 776px;
+  margin: 86px auto auto auto;
+  position: relative;
+}
+
+.auth md-card {
+  margin: 0px;
+}
+
+.auth .layout-row {
+  height: 370px;
+}
+
+.auth .card-a {
+  padding: 37px;
+}
+
+.auth .card-a h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right;
+  line-height: 50px;
+}
+
+.auth .card-b {
+  background-color: white;
+}
+
+.auth .card-b h2 {
+  color: #9B9B9B;
+  margin-bottom: 0px;
+}
+
+.auth .card-b label {
+  color: #cecece;
+}
+
+.auth .card-b h4, .auth .card-b a {
+  color: #9B9B9B;
+  font-size: 14px;
+}
+
+.auth form {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.auth form a {
+  float: right;
+}
+
+.auth form button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#log-in form {
+  height: 305px;
+}
+
+#log-in .card-b {
+  padding: 0px 30px;
+}
+
+#reset-pass form {
+  height: 256px;
+}
+
+#reset-pass .card-b {
+  padding: 35px 30px;
+}
+
+#new-pass form {
+  height: 305px;
+}
+
+#new-pass .card-b {
+  padding: 5px 30px;
+}
+
+.cart-list {
+  background-color: #EDD400;
+}
+
+.sign-up-cart {
+  width: 260px;
+  margin: 1.07143em;
+  margin: 30px;
+  border: 1px solid #ECECEC;
+  background-color: white;
+}
+
+.sign-up-cart h3 {
+  margin: 20px;
+}
+
+.sign-up-cart h4 {
+  color: black;
+}
+
+.sign-up-cart h4 a {
+  color: white;
+}
+
+.sign-up-cart .panel-body {
+  background-color: white;
+}
+
+.sign-up-cart .panel-body a {
+  color: #9B9B9B;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.sign-up-cart .cart-list {
+  margin: 1px auto;
+}
+
+.sign-up-cart .cart-list.inactive {
+  background-color: #DEE1E2;
+}
+
+.sign-up-cart .cart-list h4 {
+  margin: 0px;
+  padding: 10px 20px;
+}
+
+.sign-up-cart button {
+  text-align: middle;
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+.Sign-up {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.Sign-up h2 {
+  font-size: 18px;
+}
+
+.Sign-up h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.marketing p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.marketing .static-content .contact p {
+  font-size: 12px;
+}
+
+.marketing .static-content .padding {
+  padding-right: 20px;
+}
+
+.marketing .static-content h1 {
+  margin: 0px;
+  border-bottom: 2px solid gray;
+}
+
+.marketing .static-content .wrap {
+  margin-top: 20px;
+}
+
+.marketing .static-content .wrap h1 {
+  border-bottom: 0px;
+}
+
+.marketing .static-content .bottom-border {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.marketing .static-content .bottom-border h3, .marketing .static-content .bottom-border h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.marketing .static-content img.responsive {
+  width: 100%;
+  max-height: auto;
+  margin: 20px 0 20px 0;
+}
+
+.marketing .static-content .contact {
+  margin-top: 30px;
+}
+
+.marketing .static-content .corporate-header {
+  position: relative;
+}
+
+.marketing .static-content .corporate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#staticnav-directive {
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+#home-page .wrapper {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+  text-align: center;
+}
+
+#home-page .section1 {
+  height: 488px;
+}
+
+#home-page .section2 {
+  background-color: white;
+  height: 350px;
+}
+
+#home-page .section2 h3 {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+  margin: auto;
+}
+
+#home-page .section2 h3 span {
+  font-weight: bold;
+}
+
+#home-page .section3 {
+  height: 400px;
+}
+
+#home-page .section3 .left {
+  padding: 70px;
+  text-align: right;
+}
+
+#home-page .section3 .left div {
+  margin: auto;
+}
+
+#home-page .section3 .left div h1 {
+  color: white;
+}
+
+#home-page .section3 .right {
+  width: 100%;
+}
+
+#home-page .section3 .right__image {
+  height: 98%;
+  width: 100%;
+  background-color: white;
+}
+
+#home-page .section4 {
+  background-color: white;
+  padding: 60px 0px;
+}
+
+#home-page .section5 {
+  padding: 70px 0px;
+}
+
+#home-page .section5 h3 {
+  color: #5D5D5D;
+}
+
+#home-page .section6 {
+  min-height: 488px;
+}
+
+#home-page .section6 span {
+  background-color: white;
+  padding: 5px 15px;
+  margin: 25px;
+  color: #4A4A4A;
+}
+
+#home-page .section6 span input[type="text"] {
+  padding: 10px;
+  border: none;
+  -webkit-transition: border 0.3s;
+          transition: border 0.3s;
+}
+
+#home-page .section6 span input[type="text"]:focus,
+#home-page .section6 span input[type="text"].focus {
+  outline: none;
+}
+
+#home-page .section7 {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#home-page .section7 span {
+  font-weight: bold;
+}
+
+#user-settings, #billing-invoice, #order-details, #account-billing {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+#user-settings .header, #billing-invoice .header, #order-details .header, #account-billing .header {
+  color: #9B9B9B;
+}
+
+#orders {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+#orders h3 {
+  margin: 45px 0px 0px 0px;
+}
+
+.Dashboard {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.Dashboard__item-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.Dashboard__item-description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.85714em;
+}
+
+.Dashboard__cart {
+  width: 260px;
+  margin: 1.07143em;
+  border: 1px solid #ECECEC;
+  background-color: white;
+}
+
+.Dashboard__cart__title {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 1.71429em;
+  margin: 20px;
+}
+
+.Dashboard__cart__edit-btn {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+  background-color: inherit;
+  color: #9B9B9B;
+  border: 1px solid #9B9B9B;
+}
+
+.Dashboard__cart__edit-btn:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+.Dashboard__cart__edit-btn:focus {
+  outline: none;
+}
+
+.Dashboard__cart__edit-btn:hover {
+  color: black;
+}
+
+.Dashboard__cart h4 {
+  color: black;
+}
+
+.Dashboard__cart .panel-body {
+  background-color: white;
+}
+
+.Dashboard__cart .cart-list {
+  background-color: #EDD400;
+  margin: 1px auto;
+}
+
+.Dashboard__cart .cart-list.inactive {
+  background-color: #DEE1E2;
+}
+
+.Dashboard__cart .cart-list h4 {
+  margin: 0px;
+  padding: 10px 20px;
+}
+
+.Dashboard__times {
+  color: #9B9B9B;
+}
+
+.Dashboard__drop-down-container {
+  margin: 0;
+}
+
+.Dashboard .Dashboard__cart__step-btn {
+  text-align: middle;
+  width: 80%;
+  margin: 0 auto 20px auto;
+}
+
+#your-stuff h3 {
+  margin: 45px 0px 0px 0px;
+}
+
+#new-order {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.Confirm-order {
+  width: 680px;
+}
+
+.Confirm-order__section-title {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+  font-size: 1.28571em;
+}
+
+.Confirm-order__order-section {
+  width: 23.92857em;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+#footer {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  background-color: #2F2F2F;
+  color: white;
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  min-width: 970px;
+  height: 100px;
+  z-index: 3;
+  font-size: 14px;
+}
+
+#footer .layout-row {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+#footer div.wrapper {
+  margin: 38px 0px;
+}
+
+#footer div.wrapper .separator {
+  margin: auto 15px;
+}
+
+#footer div.wrapper > a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer div.wrapper > a .active {
+  background-color: #2F2F2F;
+  text-decoration: underline;
+}
+
+#footer div.wrapper > a:hover {
+  text-decoration: underline;
+}
+
+#footer .icons {
+  margin: 35px 8px;
+  padding: 8px 10px;
+}
+
+.Item-cards .itemCard {
+  background-color: white;
+  width: 202px;
+  margin: 10px;
+  border: 1px solid #ECECEC;
+}
+
+.Item-cards .itemCard h4 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.Item-cards .itemCard h5 {
+  font-size: 12px;
+}
+
+.Item-cards .itemCard .item-image {
+  width: 200px;
+  height: 150px;
+  position: relative;
+}
+
+.Item-cards .itemCard .item-image__times {
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.Item-cards .itemCard .item-image__times:focus {
+  outline: none;
+}
+
+.Item-cards .itemCard .item-image:hover .item-image__times {
+  color: #9B9B9B;
+}
+
+.Item-cards .itemCard .item-image .pad {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.Item-cards .itemCard .item-image .topper {
+  z-index: 2;
+  position: absolute;
+  left: 35%;
+  top: 30%;
+}
+
+.Item-cards .itemCard .item-image .darkpad {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.85714em;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #4A4A4A;
+  opacity: 0.9;
+  color: white;
+}
+
+.Item-cards .itemCard .item-image .darkpad__btn-inverted {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+  background-color: #4A4A4A;
+  opacity: 0.9;
+  border: 2px solid white;
+  color: white;
+}
+
+.Item-cards .itemCard .item-image .darkpad__btn-inverted:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+.Item-cards .itemCard .item-image .darkpad__btn-inverted:focus {
+  outline: none;
+}
+
+.Item-cards .itemCard .item-image .darkpad__btn-inverted:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+
+.Item-cards .itemCard .item-image .darkpad__link {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.Item-cards .itemCard .box1 {
+  padding: 0px 10px;
+}
+
+.Item-cards .itemCard .box1 h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #9B9B9B;
+}
+
+.Item-cards .itemCard .box2 {
+  padding: 0 10px;
+  border-top: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.Item-cards .itemCard .box2 h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.Item-cards .itemCard .box3 {
+  text-align: center;
+  width: 100%;
+  padding: 10px 25px;
+}
+
+.Item-cards__btn-grey {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+  background-color: inherit;
+  color: #9B9B9B;
+  border: 1px solid #9B9B9B;
+  width: 100%;
+  margin: 5px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Item-cards__btn-grey:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+.Item-cards__btn-grey:focus {
+  outline: none;
+}
+
+.Item-cards__btn-grey:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+.Item-cards__btn-grey:focus {
+  outline: none;
+}
+
+.Item-cards__btn-grey:hover {
+  color: black;
+}
+
+#navbar {
+  min-width: 970px;
+  border-bottom: 1px solid #ECECEC;
+  z-index: 2;
+}
+
+#navbar .top-nav span {
+  color: #EDD400;
+}
+
+#navbar .layout-row {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+#navbar .top-nav {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  height: 48px;
+  background-color: #4A4A4A;
+  text-align: right;
+}
+
+#navbar .top-nav .layout-row {
+  padding: 15px;
+  color: white;
+}
+
+#navbar .top-nav .layout-row a {
+  color: white;
+}
+
+#navbar .lower-nav {
+  height: 100px;
+  background-color: white;
+}
+
+#navbar .lower-nav #logo {
+  height: 40px;
+  width: 140px;
+  margin: 30px 0px;
+}
+
+#navbar .lower-nav span {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5D5D5D;
+  padding: 19px 0px;
+  margin: auto 15px;
+  cursor: pointer;
+}
+
+#navbar .lower-nav span.nav-link:hover {
+  text-decoration: underline;
+}
+
+#navbar .lower-nav span.nav-link.active {
+  text-decoration: underline;
+  cursor: default;
+}
+
+#navbar .lower-nav .log-in:hover {
+  text-decoration: underline;
+}
+
+#navbar .lower-nav .log-in.active {
+  text-decoration: underline;
+  cursor: default;
+}
+
+#navbar .lower-nav span.log-in {
+  border-left: 1px solid #dddddd;
+  padding-left: 30px;
+  margin-right: 0px;
+}
+
+#navbar .lower-nav .bar {
+  vertial-align: center;
+  margin: auto 15px;
+}
+
+#navbar .lower-nav button {
+  margin: 30px 0px 30px 30px;
+}
+
+#overviewNavCss {
+  min-width: 970px;
+  background-color: #EDD400;
+}
+
+#overviewNavCss .layout-row {
+  width: 970px;
+  padding: 0 15px;
+  margin: auto;
+  height: 118px;
+}
+
+#overviewNavCss h2 {
+  color: white;
+  display: inline;
+  margin: auto 15px;
+}
+
+#overviewNavCss span.nav-link {
+  color: white;
+  cursor: pointer;
+}
+
+#overviewNavCss span.nav-link.active {
+  text-decoration: underline;
+  cursor: default;
+}
+
+#overviewNavCss span.nav-link:hover {
+  text-decoration: underline;
+}
+
+#overviewNavCss span.nav-link:focus {
+  text-decoration: underline;
+}
+
+.planCard {
+  border: 1px solid #ECECEC;
+  border-radius: 2px;
+  min-width: 331px;
+  margin: 20px;
+  background-color: white;
+}
+
+.planCard .plan-image {
+  min-height: 180px;
+  line-height: 180px;
+  border-right: 1px solid #ECECEC;
+}
+
+.planCard .plan-image img {
+  margin: auto;
+}
+
+.planCard .plan-info {
+  width: 148px;
+}
+
+.planCard .plan-info .box1 {
+  padding: 10px 10px 0px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.planCard .plan-info .box1 h4 {
+  color: #4A4A4A;
+  font-size: 16px;
+  font-family: 'Hind', sans-serif;
+}
+
+.planCard .plan-info .box1 h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #9B9B9B;
+  font-size: 12px;
+}
+
+.planCard .plan-info .price {
+  text-align: justify;
+  border-bottom: 1px solid #ECECEC;
+  padding: 0px 10px;
+}
+
+.planCard .plan-info .price h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #4A4A4A;
+  font-size: 12px;
+}
+
+.planCard .plan-info .box3 {
+  padding: 15px 10px;
+}
+
+.planCard .plan-info .box3 .md-select-value {
+  min-width: 45px;
+}
+
+.planCard .plan-info .box3 .md-select-value span {
+  font-size: 14px !important;
+}
+
+.planCard .plan-info .box3 button {
+  width: 62px;
+  height: 40px;
+  padding: 0px;
+}
+
+.planCard .plan-info .box3-btn {
+  width: 100%;
+  margin: 10px;
+}
+
+#new-plan h3 span {
+  font-size: 10px;
+  color: #9B9B9B;
+  padding-top: 16px;
+}
+
+#new-plan h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.calendar {
+  display: inline-block;
+  min-height: 272px;
+  min-width: 296px;
+}
+
+#slot-picker .btn-info.active, #slot-picker .btn-info:active, #slot-picker .open > .dropdown-toggle.btn-info {
+  background-color: #EDD400;
+  border-color: #EDD400;
+}
+
+div.slot-picker {
+  background-color: #4A4A4A;
+  color: white;
+  border: 1px solid #DEE1E2;
+  padding: 5px;
+  margin: 0px 20px 5px 0px;
+  text-align: center;
+  outline: none;
+}
+
+div.slot-picker.enabled:link {
+  background-color: #4A4A4A;
+}
+
+div.slot-picker.enabled:visited {
+  background-color: #EDD400;
+}
+
+div.slot-picker.enabled:hover {
+  background-color: #EDD400;
+}
+
+div.slot-picker.enabled:active {
+  background-color: #EDD400;
+}
+
+div.slot-picker.disabled {
+  background-color: #DEE1E2;
+}
+
+div.slot-picker.active {
+  background-color: #EDD400;
+}
+
+#slot-picker table td {
+  padding: 0px;
+}
+
+.marketing h4.staticnav {
+  border-bottom: 1px solid #4A4A4A;
+  margin: 0px;
+  padding: 10px 10px;
+}
+
+.marketing h4.staticnav:last-child {
+  border-bottom: 0px;
+}
+
+.marketing h4.staticnav:hover, .marketing h4.staticnav.active {
+  border-left: 5px solid #EDD400;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+.UserAddresses__section {
+  padding: 1em 0;
+}
+
+.UserAddresses__title {
+  border-bottom: 1px solid #9B9B9B;
+}
+
+.UserAddresses__button {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+}
+
+.UserAddresses__button:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+.UserAddresses__button:focus {
+  outline: none;
+}
+
+.UserAddresses__button--secondary {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+  background-color: inherit;
+  color: #9B9B9B;
+  border: 1px solid #9B9B9B;
+}
+
+.UserAddresses__button--secondary:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+.UserAddresses__button--secondary:focus {
+  outline: none;
+}
+
+.UserAddresses__button--secondary:hover {
+  color: black;
+}
+
+.UserCreditCards__button {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+}
+
+.UserCreditCards__button:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+.UserCreditCards__button:focus {
+  outline: none;
+}
+
+.UserCreditCards__button--secondary {
+  font-family: 'Hind', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #EDD400;
+  border-radius: 3px;
+  border: 1px solid #EDD400;
+  height: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: black;
+  background-color: inherit;
+  color: #9B9B9B;
+  border: 1px solid #9B9B9B;
+}
+
+.UserCreditCards__button--secondary:hover {
+  border: 1px solid #ffe508;
+  background-color: #ffe508;
+}
+
+.UserCreditCards__button--secondary:focus {
+  outline: none;
+}
+
+.UserCreditCards__button--secondary:hover {
+  color: black;
+}
+
+.UserCreditCards__input-container {
+  margin: 0;
+}
+
+.UserCreditCards__section {
+  padding-bottom: 1em;
+}

@@ -1,0 +1,8 @@
+navbar
+.FoodsList(layout="row", layout-align="center", layout-wrap)
+	.description
+		img(src="/IMAGES/fourseasons.jpg", width="100%")
+		.description__title {{restaurantName}}
+	.foodItem(ng-repeat="food in foods track by $index", layout="column", layout-margin, ui-sref="foodDetail({foodName:food.name})")
+		img(src="/IMAGES/{{food.imgUrl}}", width="200", height="200")
+		.foodItem__name {{food.name}}
