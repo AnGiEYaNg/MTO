@@ -1,8 +1,14 @@
-.Homepage(layout="column", flex)
-	img.back-img(src="/IMAGES/outdoor2.jpg")
-	.logo(layout="row", layout-align="center")
-		img(src="/IMAGES/logo.png", width="280px")
+.Homepage
+	.Homepage-logo(layout="row", layout-align="center center")
+		img(src="/IMAGES/logo.png", width="280px", height="auto")
 
-	.restaurant-btn(layout="row", flex="80", layout-align="center", ui-sref="main.restaurants") Restaurants
-	.bar-btn(layout="row", flex="80", layout-align="center", ui-sref="main.bars") Bars
-	span(flex)
+	.Homepage-hero(layout="row", layout-align="center center")
+		.Homepage-heroText The ultimate lifestyle app.
+
+	.Homepage-btnContainer(layout="row", layout-xs="column", layout-wrap)
+		.Homepage-btns(layout="row", layout-align="center center", flex, flex-order-gt-xs="30")
+			.Homepage-btnText Restaurants
+		.Homepage-btns(layout="row", layout-align="center center", flex, flex-order-gt-xs="30") 
+			.Homepage-btnText Bars
+		.Homepage-btns(layout="row", layout-align="center center", flex, flex-order-gt-xs="50") 
+			.Homepage-btnText Anti-restaurants

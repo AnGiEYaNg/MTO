@@ -19,7 +19,12 @@ app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $ur
     })
     .state('main.bars', {
     	url:'/bars',
-    	template: '<places></places>'
+    	template: '<places></places>',
+      resolve: {
+        getBars: function(BarsFact){
+          return BarsFact.getBars();
+        }
+      }
     })
     .state('food', {
       url:'/:placeName',

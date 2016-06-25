@@ -1,7 +1,12 @@
 html, body {
-	background-color: $textColor;
+	font-family: 'Open Sans', 'Hind', sans-serif;
+	background-color: $defaultBackColor;
+	color: #4A4A4A;
+	font-size: 14px;
 	height: 100%;
-	z-index: -2;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
 }
 
 .hr-dark {

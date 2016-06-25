@@ -3,6 +3,7 @@ app.factory('BarsFact', function($http){
 	BarsFact.getBars = function(){
 		firebase.database().ref('/barlist').on('value', function(response){
 			console.log('get response from firebase', response.val());
+			return BarsFact.barsList = response.val();
 		})
 	}
 	return BarsFact;
