@@ -15,13 +15,27 @@ app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $ur
     })
     .state('main.restaurants', {
     	url:'/restaurants',
-    	template: '<places></places>'
+    	template: '<places locations="getLocation"></places>',
+      resolve: {
+        getLocation: function(BarsFact){
+          return BarsFact.getBars();
+        }
+      }
     })
     .state('main.bars', {
     	url:'/bars',
-    	template: '<places></places>',
+    	template: '<places  locations="getLocation></places>',
       resolve: {
-        getBars: function(BarsFact){
+        getLocation: function(BarsFact){
+          return BarsFact.getBars();
+        }
+      }
+    })
+    .state('main.antiRest', {
+      url:'/bars',
+      template: '<places  locations="getLocation></places>',
+      resolve: {
+        getLocation: function(BarsFact){
           return BarsFact.getBars();
         }
       }

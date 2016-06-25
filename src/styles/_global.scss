@@ -9,29 +9,6 @@ html, body {
 	line-height: 1.5;
 }
 
-.hr-dark {
-	border-top: 1px solid $hr-color-dark;
-}
-.hr-light {
-	border-top: 1px solid $hr-color-light;
-}
-
-// buttons*************************************************
-button {
-	@include button-default;
-}
-.btn-grey {
-	@include button-grey;
-}
-.btn-inverted {
-	@include button-inverted;
-}
-.btn-disabled {
-	@include button-disabled;
-}
-.btn-arrow {
-	margin-left: em(50);
-}
 
 
 
