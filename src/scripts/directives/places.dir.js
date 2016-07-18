@@ -6,7 +6,6 @@ app.directive('places', function($state, BarsFact){
 			placeList: "="
 		},
 		link: function(scope){
-			console.log('!!!', BarsFact.restaurantsList)
 
 		}
 	}

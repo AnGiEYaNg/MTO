@@ -17,6 +17,7 @@
     "node": ">=5.0.0"
   },
   "dependencies": {
+    "angularfire": "^2.0.1",
     "bower": "^1.7.7",
     "express": "^4.13.4",
     "firebase": "^3.0.5",

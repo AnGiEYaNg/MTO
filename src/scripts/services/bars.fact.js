@@ -1,40 +1,10 @@
-app.factory('BarsFact', function($http, $q){
+app.factory('BarsFact', function($http, $q, $firebaseObject){
 	var BarsFact = {};
 
-	BarsFact.getImage = function(link){
-		firebase.storage().ref(link)
-		.getDownloadURL()
-		.then(function(imgUrl){
-			console.log('get img url', imgUrl);
-			return imgUrl;
-		})
-		.catch(function(error){
-			console.log('error occured at retrieving image', error);
-		});
-	}
-
-	BarsFact.getBars = function(){
-		firebase.database().ref('/barslist').on('value', function(response){
-			console.log('get response from firebase', response.val());
-			BarsFact.barsList = response.val();
-			return $q.when(BarsFact.barsList);
-		})
-	}
-
-	BarsFact.getRestaurants = function(){
-		return firebase.database().ref('/restaurantslist').on('value', function(response){
-			console.log('get response from firebase', response.val());
-			BarsFact.restaurantsList = response.val();
-			return $q.when(BarsFact.restaurantsList);
-		})
-	}
-
-	BarsFact.getAntiRests = function(){
-		firebase.database().ref('/antirestlist').on('value', function(response){
-			console.log('get response from firebase', response.val());
-			BarsFact.antiRestList = response.val();
-			return $q.when(BarsFact.antiRestList);
-		})
+	var ref = new Firebase("https://the-mto-app-4e5fd.firebaseio.com");
+	BarsFact.getAllData = function(){
+		BarsFact.antirestList =  $firebaseObject(ref);
+		return BarsFact.antirestList;
 	}
 	return BarsFact;
 })
