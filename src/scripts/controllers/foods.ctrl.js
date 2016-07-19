@@ -10,10 +10,10 @@ app.controller('foodsCtrl', function($scope, $stateParams) {
 	}
 	else {
 		$scope.foods = [
-			{name: 'Society Street', imgUrl: 'societystreet.jpg'},
-			{name: 'The Flaneur', imgUrl: 'theflaneur.jpg'},
-			{name: 'The Damasco', imgUrl: 'thedamasco.jpg'},
-			{name: '60th', imgUrl: '60th.jpg'}
+			{name: 'Society Street', imgUrl: 'orange juice table.jpeg'},
+			{name: 'The Flaneur', imgUrl: 'orange juice table.jpeg'},
+			{name: 'The Damasco', imgUrl: 'orange juice table.jpeg'},
+			{name: '60th', imgUrl: 'orange juice table.jpeg'}
 		]
 	}
 

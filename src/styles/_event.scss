@@ -3,7 +3,6 @@
 		@include row;
 		@include center;
 		@include middle;
-		height: 200px;
 		padding: 40px;
 		background-image: url("/IMAGES/blackcrescent.jpg");
 		background-size: cover;
@@ -14,12 +13,16 @@
 	}
 	&__title {
 		@include font-xxl-hind-medium;
+		font-size: 90px;
 	}
 	&__location {
 		@include font-med-open-sans;
+		font-size: 50px;
 	}
 	&__content {
 		@include row;
+		font-size: 50px;
 		padding: 15px;
+		padding-bottom: 50px;
 	}
 }

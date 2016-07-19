@@ -5,6 +5,7 @@
 		.Event__location Time: TBD
 .Event__content
 	.foodItem(ng-repeat="drink in placeList.cocktails track by $index", layout="column", layout-margin)
-		img(src="/IMAGES/theflaneur.jpg", width="200", height="200")
-		.foodItem__name {{drink.name}}
+		img(src="/IMAGES/orange juice table.jpeg", width="300", height="300")
+		.foodItem__name 
+			b {{drink.name}}
 		.Event__drinkIngredients {{drink.ingredients}}
