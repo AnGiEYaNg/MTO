@@ -1,0 +1,10 @@
+.Event__header
+	.Event__wrapper
+		.Event__title {{placeList.name}}
+		.Event__location Location: {{placeList.location}}
+		.Event__location Time: TBD
+.Event__content
+	.foodItem(ng-repeat="drink in placeList.cocktails track by $index", layout="column", layout-margin)
+		img(src="/IMAGES/theflaneur.jpg", width="200", height="200")
+		.foodItem__name {{drink.name}}
+		.Event__drinkIngredients {{drink.ingredients}}

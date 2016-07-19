@@ -16,7 +16,9 @@
 @import "variables";
 @import "mixin-font";
 @import "global";
+@import "grid.mixin";
 
 @import "home";
 @import "navbar";
 @import "places";
+@import "event";

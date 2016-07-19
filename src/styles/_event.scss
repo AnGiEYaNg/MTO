@@ -1,0 +1,25 @@
+.Event {
+	&__header{
+		@include row;
+		@include center;
+		@include middle;
+		height: 200px;
+		padding: 40px;
+		background-image: url("/IMAGES/blackcrescent.jpg");
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		color: white;
+		opacity: .9;
+	}
+	&__title {
+		@include font-xxl-hind-medium;
+	}
+	&__location {
+		@include font-med-open-sans;
+	}
+	&__content {
+		@include row;
+		padding: 15px;
+	}
+}

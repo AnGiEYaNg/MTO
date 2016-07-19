@@ -6,7 +6,12 @@ app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $ur
     .state('home', {
       url: '/',
       controller: 'homeCtrl',
-      templateUrl: 'templates/home.html'
+      templateUrl: 'templates/home.html',
+      // resolve: {
+      //   allData: function(BarsFact){
+      //     return BarsFact.getAllData();
+      //   }
+      // }
     })
     .state('main', {
     	abstract: true,
@@ -15,30 +20,31 @@ app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $ur
     })
     .state('main.restaurants', {
     	url:'/restaurants',
-    	template: '<places placeList="placeList"></places>',
-      resolve: {
-        placeList: function(BarsFact){
-          return BarsFact.getRestaurants();
-        }
-      }
+    	template: '<places placeType="restaurants"></places>',
+      // resolve: {
+      //   placeList: function(BarsFact){
+      //     return BarsFact.getRestaurants();
+      //   }
+      // }
     })
     .state('main.bars', {
     	url:'/bars',
-    	template: '<places placeList="placeList"></places>',
-      resolve: {
-        placeList: function(BarsFact){
-          return BarsFact.getBars();
-        }
-      }
+    	template: '<places placeType="bars"></places>',
+      // resolve: {
+      //   placeList: function(BarsFact){
+      //     return BarsFact.getBars();
+      //   }
+      // }
     })
     .state('main.antiRest', {
-      url:'/bars',
-      template: '<places placeList="placeList"></places>',
-      resolve: {
-        placeList: function(BarsFact){
-          return BarsFact.getBars();
-        }
-      }
+      url:'/event',
+      templateUrl: 'templates/event.html',
+      controller: 'eventCtrl'
+      // resolve: {
+      //   placeList: function(BarsFact){
+      //     return BarsFact.getAntiRest();
+      //   }
+      // }
     })
     .state('food', {
       url:'/:placeName',
@@ -49,5 +55,4 @@ app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $ur
       url:'/detail/:foodName',
       templateUrl: 'templates/foodDetail.html'
     })
-
 }]);
