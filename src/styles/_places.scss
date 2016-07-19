@@ -15,7 +15,7 @@
 
 	}
 	.Place__name {
-		// @include font-lg-hind-medium;
+		@include font-xl-hind-medium;
 		background-color: rgba(79, 189, 181,.7);
 		color: white;
 		padding: em(40) em(20) em(40) em(5);
@@ -32,7 +32,8 @@
 		text-align: center;
 		position: relative;
 		&__title {
-			// @include font-lg-hind-light;
+			@include font-xl-hind-light;
+			font-size: 50px;
 			position: absolute;
 			left: 0;
 			top:0;
@@ -50,8 +51,9 @@
 			border-radius: 50%;
 		}
 		&__name {
-			// @include font-lg-hind-light;
-			margin: 1em;
+			@include font-xl-hind-light;
+			font-size: 40px;
+			margin: 20px;
 		}
 	}
 }
@@ -59,15 +61,17 @@
 	// @include custom-width;
 	background-color: white;
 	text-align: center;
+	padding-bottom: 50px;
 	img {
 		width: 100%;
 	}
 	&__title {
-		// @include font-xl-open-sans-semibold;
+		@include font-xl-open-sans-semibold;
+		font-size: 90px;
 		margin: 1em;
 	}
 	&__description {
-		// @include font-med-open-sans;
+		@include font-xl-open-sans;
 		margin: 1em;
 	}
 }
